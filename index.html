@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enter Code</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f0f0f0;
+      padding: 40px;
+      text-align: center;
+    }
+    input {
+      padding: 10px;
+      font-size: 16px;
+      width: 250px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    #message {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Enter Code</h1>
+  <input type="text" id="codeInput" placeholder="Enter code here">
+  <button onclick="checkCode()">Submit</button>
+  <div id="message"></div>
+
+  <script>
+    function checkCode() {
+      const correctCode = "876 6804 673 57";
+      const input = document.getElementById("codeInput").value.trim();
+
+      if (input === correctCode) {
+        window.location.href = "https://sgtllama05.github.io/fillerxcdfer/";
+      } else {
+        window.location.href = "https://sgtllama05.github.io/fillerxwdfer/";
+      }
+    }
+  </script>
+</body>
+</html>
