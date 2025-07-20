@@ -29,13 +29,13 @@
 </head>
 <body>
   <h1>Enter Code</h1>
-  <input type="text" id="codeInput" placeholder="Enter code here">
+  <input type="text" id="codeInput" placeholder="Numbers Please">
   <button onclick="checkCode()">Submit</button>
   <div id="message"></div>
 
   <script>
     function checkCode() {
-      const correctCode = "876 6804 673 57";
+      const correctCode = "876680467357";
       const input = document.getElementById("codeInput").value.trim();
 
       if (input === correctCode) {
